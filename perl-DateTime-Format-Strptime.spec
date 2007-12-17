@@ -13,7 +13,6 @@ URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/DateTime/%{module}-%{version}.tgz
 BuildRequires:  perl(DateTime)
 Buildarch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module implements most of strptime(3), the POSIX function that is the
