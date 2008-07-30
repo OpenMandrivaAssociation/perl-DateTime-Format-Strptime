@@ -1,7 +1,7 @@
 %define module  DateTime-Format-Strptime
 %define name    perl-%{module}
 %define version 1.0702
-%define release %mkrel 1
+%define release %mkrel 3
 
 Name:           %{name}
 Version:        %{version}
