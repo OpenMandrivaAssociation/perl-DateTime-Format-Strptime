@@ -1,11 +1,8 @@
 %define module  DateTime-Format-Strptime
-%define name    perl-%{module}
-%define version 1.0702
-%define release %mkrel 3
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
+Name:           perl-%{module}
+Version:        1.0800
+Release:        %mkrel 1
 Summary:        Parse and format strp and strf time patterns
 License:        GPL or Artistic
 Group:          Development/Perl
@@ -13,7 +10,7 @@ URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/DateTime/%{module}-%{version}.tgz
 BuildRequires:  perl(DateTime)
 Buildarch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module implements most of strptime(3), the POSIX function that is the
@@ -43,4 +40,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/DateTime
 %{_mandir}/*/*
-
