@@ -1,7 +1,7 @@
 %define module  DateTime-Format-Strptime
 
 Name:           perl-%{module}
-Version:        1.0800
+Version:        1.0900
 Release:        %mkrel 1
 Summary:        Parse and format strp and strf time patterns
 License:        GPL or Artistic
