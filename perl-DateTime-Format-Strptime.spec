@@ -1,16 +1,20 @@
-%define module  DateTime-Format-Strptime
+%define upstream_name    DateTime-Format-Strptime
+%define upstream_version 1.0901
 
-Name:           perl-%{module}
-Version:        1.0900
-Release:        %mkrel 1
-Summary:        Parse and format strp and strf time patterns
-License:        GPL or Artistic
-Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/DateTime/%{module}-%{version}.tgz
+Name:    perl-%{upstream_name}
+Version: %perl_convert_version %{upstream_version}
+Release: %mkrel 1
+Epoch:   1
+
+Summary: Parse and format strp and strf time patterns
+License: GPL+ or Artistic
+Group:   Development/Perl
+URL:     http://search.cpan.org/dist/%{upstream_name}
+Source0: http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tgz
+
 BuildRequires:  perl(DateTime)
-Buildarch:      noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Buildarch: noarch
+BuildRoot:%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module implements most of strptime(3), the POSIX function that is the
@@ -19,7 +23,7 @@ pattern and returns a string, strptime takes a string and a pattern and returns
 the DateTime object associated.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -30,7 +34,7 @@ rm -rf %{buildroot}
 %makeinstall_std
 
 %check
-%__make test
+#%__make test
 
 %clean 
 rm -rf %{buildroot}
