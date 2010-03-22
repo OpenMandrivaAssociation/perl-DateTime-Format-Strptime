@@ -1,5 +1,5 @@
 %define upstream_name    DateTime-Format-Strptime
-%define upstream_version 1.1000
+%define upstream_version 1.2000
 
 Name:    perl-%{upstream_name}
 Version: %perl_convert_version %{upstream_version}
@@ -10,7 +10,7 @@ Summary: Parse and format strp and strf time patterns
 License: GPL+ or Artistic
 Group:   Development/Perl
 URL:     http://search.cpan.org/dist/%{upstream_name}
-Source0: http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tgz
+Source0: http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(DateTime)
 Buildarch: noarch
