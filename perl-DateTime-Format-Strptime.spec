@@ -1,5 +1,5 @@
 %define upstream_name    DateTime-Format-Strptime
-%define upstream_version 1.2000
+%define upstream_version 1.4000
 
 Name:    perl-%{upstream_name}
 Version: %perl_convert_version %{upstream_version}
