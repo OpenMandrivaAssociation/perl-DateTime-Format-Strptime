@@ -13,6 +13,7 @@ URL:     http://search.cpan.org/dist/%{upstream_name}
 Source0: http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(DateTime)
+BuildRequires:  perl-devel
 Buildarch: noarch
 BuildRoot:%{_tmppath}/%{name}-%{version}-%{release}
 
