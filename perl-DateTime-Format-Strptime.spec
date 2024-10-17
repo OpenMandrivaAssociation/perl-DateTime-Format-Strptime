@@ -9,7 +9,7 @@ Epoch:		1
 Summary:	Parse and format strp and strf time patterns
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(DateTime)
