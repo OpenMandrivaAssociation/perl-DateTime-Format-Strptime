@@ -12,6 +12,7 @@ Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(DateTime)
 BuildRequires:	perl-devel
 BuildArch:	noarch
