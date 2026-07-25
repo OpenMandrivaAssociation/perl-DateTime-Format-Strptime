@@ -1,16 +1,16 @@
 %define upstream_name    DateTime-Format-Strptime
-%define upstream_version 1.51
+%define upstream_version 1.80
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	15
+Version:	%{upstream_version}
+Release:	1
 Epoch:		1
 
 Summary:	Parse and format strp and strf time patterns
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://github.com/houseabsolute/DateTime-Format-Strptime
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(DateTime)
