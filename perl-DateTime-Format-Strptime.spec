@@ -1,16 +1,14 @@
 %define upstream_name    DateTime-Format-Strptime
-%define upstream_version 1.80
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.80
+Release:	2
 Epoch:		1
 
 Summary:	Parse and format strp and strf time patterns
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://github.com/houseabsolute/DateTime-Format-Strptime
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(DateTime)
@@ -24,7 +22,7 @@ pattern and returns a string, strptime takes a string and a pattern and returns
 the DateTime object associated.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -72,8 +70,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Tue Jul 07 2009 Jérôme Quelin <jquelin@mandriva.org> 1:1.90.100-1mdv2010.0
 + Revision: 393105
 - update to 1.0901
-- using %%perl_convert_version
-- fixed license field
+- using %1.80 fixed license field
 
 * Mon Jun 08 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.0900-1mdv2010.0
 + Revision: 383958
