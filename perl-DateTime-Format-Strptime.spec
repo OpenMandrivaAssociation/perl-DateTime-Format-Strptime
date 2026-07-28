@@ -1,7 +1,7 @@
 %define upstream_name    DateTime-Format-Strptime
 Name:		perl-%{upstream_name}
 Version:	1.80
-Release:	2
+Release:	3
 Epoch:		1
 
 Summary:	Parse and format strp and strf time patterns
@@ -35,7 +35,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 #make test
 
 %files 
-%doc Changes README
+%doc Changes README.md
 %{perl_vendorlib}/DateTime
 %{_mandir}/*/*
 
